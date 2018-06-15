@@ -60,7 +60,7 @@
                           </div>
                         </div>
                       <hr class="my-4">
-                            <table>
+                            <table border="1" cellpadding="10" class="">
                                   <col style="width: 200px;">
                                   <thead>
                                       <tr><th></th><th>ID Записи в БД</th><th>ID Документа</th><th>Название документа</th><th>Дата подписания</th><th>Дата принятия</th><th>ID Руководителя</th><th></th></tr>
@@ -73,6 +73,45 @@
                                               </div>
                                           </td>
                                           <td>данные</td><td>данные</td><td>данные</td><td>данные</td><td>данные</td><td>данные</td>
+                                          <td>
+                                           <div>
+                                            <div>
+                                                    <a class="btn btn-secondary btn-sm" href="edit_doc.html"><img src="images/pencil.png" width="20" height="20"></a>
+                                            </div>
+                                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                                    <a><img src="images/urna.png" width="20" height="20"></a>
+                                                </button>
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Удаление документа</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        Вы действительно хотите удалить выбранный документ?
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary">Удалить</button>
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                           </div>    
+                                          </td>
+                                      </tr>  
+                                      <tr>
+                                          <td>
+                                              <div class="col-2">
+                                                    <a class=" btn btn-secondary btn-sm" href="view_doc.html"><img src="images/glass.png" width="20" height="20">Просмотреть документ</a>
+                                              </div>
+                                          </td>
+                                          <td>данные1</td><td>данные1</td><td>данные1</td><td>данные1</td><td>данные1</td><td>данные1</td>
                                           <td>
                                            <div>
                                             <div>
