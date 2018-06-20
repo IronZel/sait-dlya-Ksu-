@@ -5,11 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" >
         <link rel="stylesheet" href="css/bootstrap.min.css">
-    </head>
-    <body>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+        
+        
+        
+       
+</head>
+<body>
+  
+    
+    
     <div class="wrapper">
 
                 <header class="header">
@@ -42,16 +51,88 @@
                 <div class="jumbotron">
                       <h1 class="display-4">Документы</h1>
                       <p class="btn_create_filtr lead">
-                        <a href="#collapseExample" data-toggle="collapse" class="col-auto btn btn-secondary btn-lg active" role="button" aria-expanded="false" aria-controls="collapseExample" aria-pressed="true">Фильтр</a>
-                        <a href="create_doc.html" class="col-auto btn btn-primary btn-lg active" role="button" aria-pressed="true">Создать</a>
+                        <a href="#collapseExample" data-toggle="collapse" 
+                           class="col-auto btn btn-secondary btn-lg active" 
+                           role="button" aria-expanded="false" aria-controls="collapseExample" 
+                           aria-pressed="true">
+                            Фильтр
+                        </a>
+                        <a href="create_doc.html" class="col-auto btn btn-primary btn-lg active" 
+                           role="button" aria-pressed="true">
+                            Создать
+                        </a>
 
                         <div class="collapse" id="collapseExample">
-                          <div class="card card-body">
-                            форма для фильтра
+                          <div class="card card-body">  
+                           
+                             
+                              
+                              
+                              
+                          
+                              <style>
+                                  * { box-sizing: border-box; }
+                        body {
+                          font: 16px Arial;
+                        }
+                        .autocomplete {
+                          /*the container must be positioned relative:*/
+                          position: relative;
+                          display: inline-block;
+                        }
+                        input {
+                          border: 1px solid transparent;
+                          background-color: #f1f1f1;
+                          padding: 10px;
+                          font-size: 16px;
+                        }
+                        input[type=text] {
+                          background-color: #f1f1f1;
+                          width: 100%;
+                        }
+                        input[type=submit] {
+                          background-color: DodgerBlue;
+                          color: #fff;
+                        }
+                        
+                              </style>
+                            <div class="row">
+                            <form autocomplete="off" class="col" action="/action_page.php" >
+                              <div class="autocomplete" style="width: 300px; ">
+                                <input id="myInput" type="text" name="myFamily" placeholder="Фамилия руководителя">
+                              </div>
+                              <div>
+                            <input type="submit" class="" style="padding-left: 10px;">
+                              </div>
+                            </form>
+                            <form autocomplete="off" class="col" action="/action_page.php" >
+                              <div class="autocomplete" style="width: 300px; ">
+                                <input id="myInput_number" type="text" name="myFamily" placeholder="Номер документа">
+                              </div>
+                              <div>
+                            <input type="submit" class="" style="padding-left: 10px;">
+                              </div>
+                            </form>
+                            </div>
+                           
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                           
+                           
+                           
+                           
                           </div>
                         </div>
                       <hr class="my-4">
-                            <table border="1" cellpadding="10" class="">
+                            <table width="100%" border="1" cellpadding="4" cellspacing="0">
                                   <col style="width: 200px;">
                                   <thead>
                                       <tr><th></th><th>Группа документа</th><th>ID Записи в БД</th><th>ID Документа</th><th>Название документа</th><th>Дата подписания</th><th>Дата принятия</th><th>ID Руководителя</th><th>Статус</th><th></th></tr>
@@ -63,7 +144,7 @@
                                                     <a class=" btn btn-secondary btn-sm" href="view_doc_d.html"><img src="images/glass.png" width="20" height="20">Просмотреть документ</a>
                                               </div>
                                           </td>
-                                          <td>Данные</td><td>данные</td><td>данные</td><td>данные</td><td>данные</td><td>данные</td><td>данные</td>
+                                            <td>Данные</td><td>данные</td><td>данные</td><td>данные</td><td>данные</td><td>данные</td><td>данные</td>
 										  <td><span class="badge badge-success">Действует</span></td>
                                           <td>
                                            <div>
@@ -141,15 +222,13 @@
                             </table>
                 </div> 
         
-        
-        
-     </div>   
-        
-        
-        
-        
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  
+     </div>  
+    
+        <script type="text/javascript" src="js/java.js"></script>
+        <script src="https://cdn.rawgit.com/xcash/bootstrap-autocomplete/v2.0.0/dist/latest/bootstrap-autocomplete.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     </body>
 </html>
