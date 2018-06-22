@@ -62,7 +62,7 @@
                             Создать
                         </a>
 
-                        <div class="collapse" id="collapseExample">
+                        <div class="col-3 collapse" id="collapseExample">
                           <div class="card card-body">  
                            
                              
@@ -95,26 +95,67 @@
                           color: #fff;
                         }
                         
-                              </style>
-                            <div class="row">
+                              </style>   
+                        <div class="row">  
+                            <div class="col">
                             <form autocomplete="off" class="col" action="/action_page.php" >
                               <div class="autocomplete" style="width: 300px; ">
-                                <input id="myInput" type="text" name="myFamily" placeholder="Фамилия руководителя">
-                              </div>
-                              <div>
-                            <input type="submit" class="" style="padding-left: 10px;">
+                                <input id="myInput_gruppa" type="text" name="myFamily" placeholder="Группа документа">
                               </div>
                             </form>
+                            </div>
+                            <div class="col-12">
                             <form autocomplete="off" class="col" action="/action_page.php" >
                               <div class="autocomplete" style="width: 300px; ">
                                 <input id="myInput_number" type="text" name="myFamily" placeholder="Номер документа">
                               </div>
-                              <div>
-                            <input type="submit" class="" style="padding-left: 10px;">
+                            </form>
+                            </div>
+                            <div class="col">
+                            <form autocomplete="off" class="col" action="/action_page.php" >
+                              <div class="autocomplete" style="width: 300px; ">
+                                <input id="myInput_name" type="text" name="myFamily" placeholder="Название документа">
                               </div>
                             </form>
                             </div>
-                           
+                            <div class="col-12">
+                            <form autocomplete="off" class="col" action="/action_page.php" >
+                              <div class="autocomplete" style="width: 300px; ">
+                                <input id="myInput_data1" type="text" name="myFamily" placeholder="Дата подписания">
+                              </div>
+                            </form>
+                            </div>
+                            <div class="col-12">
+                            <form autocomplete="off" class="col" action="/action_page.php" >
+                              <div class="autocomplete" style="width: 300px; ">
+                                <input id="myInput_data2" type="text" name="myFamily" placeholder="Дата принятия">
+                              </div>
+                            </form>
+                            </div>
+                            <div class="col-12">
+                            <form autocomplete="off" class="col" action="/action_page.php" >
+                              <div class="autocomplete" style="width: 300px; ">
+                                <input id="myInput" type="text" name="myFamily" placeholder="Фамилия руководителя">
+                              </div>
+                            </form>
+                            </div>
+                            <div class="col-12">
+                            <form autocomplete="off" class="col" action="/action_page.php" >
+                             
+                                <div class="col-12 form-group">
+                                    <select style="width: 300px; position: absolute; left: 0px;" class="col form-control" id="exampleFormControlSelect1">
+                                      <option>Действует</option>
+                                      <option>Отменен</option>
+                                    </select>
+                                </div>
+                            </form>
+                            </div>
+                            <div class="col-12">
+                                <br><br>
+                            <button type="submit" class="col-6 btn btn-dark">Фильтровать  <img src="images/filtr_white.png" width="20" height="20"></button>
+                            </div>
+                        </div>                           
+                          </div>      
                               
                               
                               
@@ -122,20 +163,31 @@
                               
                               
                               
-                              
-                              
-                              
-                           
-                           
-                           
-                           
-                          </div>
+
                         </div>
                       <hr class="my-4">
-                            <table width="100%" border="1" cellpadding="4" cellspacing="0">
+                      <table width="100%" border="1" cellpadding="4" cellspacing="0" style="
+                                                                                         th {
+                                                                                          font-size: 13px;
+                                                                                          font-weight: normal;
+                                                                                          background: #b9c9fe;
+                                                                                          border-top: 4px solid #aabcfe;
+                                                                                          border-bottom: 1px solid #fff;
+                                                                                          color: #039;
+                                                                                          padding: 8px;
+                                                                                        }
+                                                                                        td {
+                                                                                          background: #e8edff;
+                                                                                          border-bottom: 1px solid #fff;
+                                                                                          color: #669;
+                                                                                          border-top: 1px solid transparent;
+                                                                                          padding: 8px;
+                                                                                        }
+                                                                                        tr:hover td {background: #ccddff;}
+                                                                                        ">
                                   <col style="width: 200px;">
                                   <thead>
-                                      <tr><th></th><th>Группа документа</th><th>ID Записи в БД</th><th>ID Документа</th><th>Название документа</th><th>Дата подписания</th><th>Дата принятия</th><th>ID Руководителя</th><th>Статус</th><th></th></tr>
+                                      <tr><th></th><th>Группа документа</th><th>Номер Документа</th><th>Название документа</th><th>Дата подписания</th><th>Дата принятия</th><th>ФИО Руководителя</th><th>Статус</th><th></th></tr>
                                   </thead>
                                   <tbody>
                                       <tr>
