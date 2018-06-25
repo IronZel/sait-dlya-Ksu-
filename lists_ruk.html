@@ -52,7 +52,7 @@
                 </header>
               
                 <div class="jumbotron">
-                      <h1 class="display-4">Документы</h1>
+                      <h1 class="display-4">Руководители</h1>
                       <p class="btn_create_filtr lead">
                         <a href="#collapseExample" data-toggle="collapse" 
                            class="col-auto btn btn-secondary btn-lg active" 
@@ -60,7 +60,7 @@
                            aria-pressed="true">
                             Фильтр
                         </a>
-                        <a href="create_doc.html" class="col-auto btn btn-primary btn-lg active" 
+                        <a href="create_ruk.html" class="col-auto btn btn-primary btn-lg active" 
                            role="button" aria-pressed="true">
                             Создать
                         </a>
@@ -103,62 +103,44 @@
                             <div class="col">
                             <form autocomplete="off" class="col" action="/action_page.php" >
                               <div class="autocomplete" style="width: 300px; ">
-                                <input id="myInput_gruppa" type="text" name="myFamily" placeholder="Группа документа">
+                                <input id="myInput_" type="text" name="myFamily" placeholder="Номер руководителя">
                               </div>
                             </form>
                             </div>
                             <div class="col-12">
                             <form autocomplete="off" class="col" action="/action_page.php" >
                               <div class="autocomplete" style="width: 300px; ">
-                                <input id="myInput_number" type="text" name="myFamily" placeholder="Номер документа">
+                                <input id="myInput_number" type="text" name="myFamily" placeholder="Фамилия">
                               </div>
                             </form>
                             </div>
                             <div class="col">
                             <form autocomplete="off" class="col" action="/action_page.php" >
                               <div class="autocomplete" style="width: 300px; ">
-                                <input id="myInput_name" type="text" name="myFamily" placeholder="Название документа">
+                                <input id="myInput_name" type="text" name="myFamily" placeholder="Имя">
                               </div>
                             </form>
                             </div>
                             <div class="col-12">
                             <form autocomplete="off" class="col" action="/action_page.php" >
                               <div class="autocomplete" style="width: 300px; ">
-                                <input id="myInput_data1" type="text" name="myFamily" placeholder="Дата подписания">
+                                <input id="myInput_data1" type="text" name="myFamily" placeholder="Отчество">
                               </div>
                             </form>
                             </div>
                             <div class="col-12">
                             <form autocomplete="off" class="col" action="/action_page.php" >
                               <div class="autocomplete" style="width: 300px; ">
-                                <input id="myInput_data2" type="text" name="myFamily" placeholder="Дата принятия">
+                                <input id="myInput_data2" type="text" name="myFamily" placeholder="Должность">
                               </div>
-                            </form>
-                            </div>
-                            <div class="col-12">
-                            <form autocomplete="off" class="col" action="/action_page.php" >
-                              <div class="autocomplete" style="width: 300px; ">
-                                <input id="myInput" type="text" name="myFamily" placeholder="Фамилия руководителя">
-                              </div>
-                            </form>
-                            </div>
-                            <div class="col-12">
-                            <form autocomplete="off" class="col" action="/action_page.php" >
-                             
-                                <div class="col-12 form-group">
-                                    <select style="width: 300px; position: absolute; left: 0px;" class="col form-control" id="exampleFormControlSelect1">
-                                      <option>Действует</option>
-                                      <option>Отменен</option>
-                                    </select>
-                                </div>
                             </form>
                             </div>
                             <div class="col-12">
                                 <br><br>
                             <button type="submit" class="col-6 btn btn-dark">Фильтровать  <img src="images/filtr_white.png" width="20" height="20"></button>
                             </div>
-                        </div>                           
-                               
+                        </div>                       
+                           
                               
                               
                               
@@ -166,8 +148,8 @@
                               
                               
                               
+      
                         </div> 
-                        </div>
                       <hr class="my-4">
                       <table width="100%" border="1" cellpadding="4" cellspacing="0" style="
                                                                                          th {
@@ -192,13 +174,12 @@
                                   <thead>
                                       <tr>
                                           <th></th>
-                                          <th>Группа документа</th>
-                                          <th>Номер Документа</th>
-                                          <th>Название документа</th>
-                                          <th>Дата подписания</th>
-                                          <th>Дата принятия</th>
-                                          <th>ФИО Руководителя</th>
-                                          <th>Статус</th>
+                                          <th>ID Руководителя</th>
+                                          <th>Фамилия</th>
+                                          <th>Имя</th>
+                                          <th>Отчество</th>
+                                          <th>должность</th>
+                                          <th>рабочий телефон</th>
                                           <th></th>
                                       </tr>
                                   </thead>
@@ -206,7 +187,7 @@
                                       <tr>
                                           <td>
                                               <div class="col-2">
-                                                    <a class=" btn btn-secondary btn-sm" href="view_doc_d.html"><img src="images/glass.png" width="20" height="20">Просмотреть документ</a>
+                                                    <a class=" btn btn-secondary btn-sm" href="view_ruk.html"><img src="images/glass.png" width="20" height="20">Просмотреть карточку руководителя</a>
                                               </div>
                                           </td>
                                             <td>Данные</td>
@@ -215,12 +196,10 @@
                                             <td>данные</td>
                                             <td>данные</td>
                                             <td>данные</td>
-                                            <td>данные</td>
-                                            <td><span class="badge badge-success">Действует</span></td>
                                             <td>
                                                <div>
                                                 <div>
-                                                        <a class="btn btn-secondary btn-sm" href="edit_doc.html"><img src="images/pencil.png" width="20" height="20"></a>
+                                                        <a class="btn btn-secondary btn-sm" href="edit_ruk.html"><img src="images/pencil.png" width="20" height="20"></a>
                                                 </div>
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
@@ -230,13 +209,13 @@
                                                       <div class="modal-dialog" role="document">
                                                         <div class="modal-content">
                                                           <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">Удаление документа</h5>
+                                                            <h5 class="modal-title" id="exampleModalLabel">Удаление руководителя</h5>
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                               <span aria-hidden="true">&times;</span>
                                                             </button>
                                                           </div>
                                                           <div class="modal-body">
-                                                            Вы действительно хотите удалить выбранный документ?
+                                                            Вы действительно хотите удалить выбранного руководителя?
                                                           </div>
                                                           <div class="modal-footer">
                                                             <button type="button" class="btn btn-primary">Удалить</button>
@@ -252,7 +231,7 @@
                                       <tr>
                                           <td>
                                               <div class="col-2">
-                                                    <a class=" btn btn-secondary btn-sm" href="view_doc_otm.html"><img src="images/glass.png" width="20" height="20">Просмотреть документ</a>
+                                                    <a class=" btn btn-secondary btn-sm" href="view_ruk.html"><img src="images/glass.png" width="20" height="20">Просмотреть карточку руководителя</a>
                                               </div>
                                           </td>
                                           <td>Данные1</td>
@@ -261,8 +240,6 @@
                                           <td>данные1</td>
                                           <td>данные1</td>
                                           <td>данные1</td>
-                                          <td>данные1</td>
-                                          <td><span class="badge badge-danger">Отменен</span></td>
                                           <td>
                                            <div>
                                             <div>
@@ -276,13 +253,13 @@
                                                   <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                       <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Удаление документа</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Удаление руководителя</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                           <span aria-hidden="true">&times;</span>
                                                         </button>
                                                       </div>
                                                       <div class="modal-body">
-                                                        Вы действительно хотите удалить выбранный документ?
+                                                        Вы действительно хотите удалить выбранного руководителя?
                                                       </div>
                                                       <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary">Удалить</button>

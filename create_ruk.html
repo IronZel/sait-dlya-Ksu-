@@ -46,30 +46,29 @@
                     </nav>  
                 </header> 
                 <div class="jumbotron">
-                      <h2 class="display-4">Создать документ</h2>
+                      <h2 class="display-4">Создать запись о руководителе</h2>
                       <p class="lead"></p>
                       <hr class="my-4">
                       <p>
                         <form>
-                              <div class="col-3 form-group">
-                                <label for="exampleFormControlSelect1">Вид документа</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>Приказ</option>
-                                  <option>Распоряжение</option>
-                                  <option>Доверенность</option>
-                                  <option>Правовой акт</option>
-                                </select>
-                              </div>
                               <div class="col-2 form-group">
-                                <label for="formGroupExampleInput">Номер документа</label>
+                                <label for="formGroupExampleInput">Номер руководителя</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="123">
                               </div>
-                              <div class="col-10 form-group">
-                                <label for="exampleFormControlTextarea1">Наименование документа</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="о предварительном согласовании...">
+                              <div class="col-3 form-group">
+                                <label for="exampleFormControlTextarea1">Фамилия</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Иванов">
                               </div>
-                              <div class="col-6 form-group">
-                                <label for="exampleFormControlSelect1">Должность утверждающего документ</label>
+                              <div class="col-2 form-group">
+                                <label for="exampleFormControlInput1">Имя</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Илья">
+                              </div>
+                              <div class="col-2 form-group">
+                                <label for="exampleFormControlInput1">Отчество</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Петрович">
+                              </div>
+                              <div class="col-4 form-group">
+                                <label for="exampleFormControlSelect1">Должность руководителя</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                   <option>Глава администрации</option>
                                   <option>Специалист по финансам</option>
@@ -79,26 +78,11 @@
                                 </select>
                               </div>
                               <div class="col-4 form-group">
-                                <label for="exampleFormControlInput1">ФИО утверждающего документ</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Иванов Иван Иванович">
-                              </div>
-                                <div class="col form-row" >
-                                  <div class="col-3 orm-group">
-                                    <label for="exampleFormControlInput1">Дата принятия документа</label>
-                                    <input type="date" name="calendar" class="form-control" id="exampleFormControlInput1" placeholder="01 января 2018 года">
-                                  </div>
-                                  <div class="col-3 orm-group">
-                                    <label for="exampleFormControlInput1">Дата вступления документа</label>
-                                    <input type="date" name="calendar" class="form-control" id="exampleFormControlInput1" placeholder="01 января 2018 года">
-                                  </div>
-                                </div>
-
-                              <div class="col-3 form-group">
-                                  <label for="exampleFormControlFile1">Загрузите файл документа</label>
+                                  <label for="exampleFormControlFile1">Загрузите файл руководителя</label>
                                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
                               </div>
                               <input type="submit" value="Создать" class="save_btn col-1 btn btn-primary">
-                              <a class="btn btn-secondary" href="lists_docs.html">Вернуться к списку документов</a>
+                              <a class="btn btn-secondary" href="lists_docs.html">Вернуться к списку руководителей</a>
                         </form> 
                 </div>
 
